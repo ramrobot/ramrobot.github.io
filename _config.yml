@@ -18,15 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: RamRobot Code
+title: RamRobot
 email: andresortiz@protonmail.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  RamRobot es un site donde encontrarás writeups, repositorios de código, código que he hecho a lo largo de mi carrera y posts de mis opiniones en general.
+  Espero lo disfrutes :))
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: ""
 github_username:  ramrobot
 
 # ramrobot.github.io

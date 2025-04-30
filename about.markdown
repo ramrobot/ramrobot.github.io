@@ -1,18 +1,17 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Social
+permalink: /social/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+HacktheBox: [DDR4RAM](https://app.hackthebox.com/profile/424312)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+GitHub: [ramrobot](https://github.com/ramrobot)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Linkedin: [Carlos Ortiz](https://www.linkedin.com/in/carlos-andres-ortiz-montero-b140ab210/)
 
+Correo: [andresortiz@protonmail.ch](mailto:andresortiz@protonmail.ch)  
 
-[jekyll-organization]: https://github.com/jekyll
+github-pages: [ramrobot][github-pages]
+
+[github-pages]: https://ramrobot.github.io/
