@@ -194,6 +194,85 @@ table {
   }
 }
 
+// --- Newsletter form (Buttondown) ------------------------------------------
+.embeddable-buttondown-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 340px;
+  margin: 0 auto 0;
+  padding: 14px;
+  border: 1px dashed $dm-brand-color;
+  border-radius: 4px;
+  background: $dm-code-background-color;
+  color: $dm-text-color;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  label {
+    @include pixel;
+    font-size: 10px;
+    color: $dm-brand-color-light;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  // Row: email input + subscribe button side by side
+  .bd-row {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 10px;
+    border: 1px solid $dm-border-color-02;
+    border-radius: 3px;
+    background: $dm-background-color;
+    color: $dm-text-color;
+    font: inherit;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: lighten($dm-brand-color, 10%);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $dm-brand-color-light;
+    }
+  }
+
+  input[type="submit"] {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border: 1px solid $dm-brand-color;
+    border-radius: 3px;
+    background: $dm-brand-color;
+    color: $dm-text-color;
+    font: inherit;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+
+    &:hover {
+      background: $dm-brand-color-light;
+      border-color: $dm-brand-color-light;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+
+    a {
+      color: $dm-brand-color;
+    }
+  }
+}
+
 // --- Responsive ------------------------------------------------------------
 @include media-query($on-palm) {
   h1 { font-size: 16px; }
