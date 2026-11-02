@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Sanity check"
+title:  "sanity check"
 date:   2025-04-29 00:19:00 -0600
 categories: general
+description: "Prueba de publicación del blog RamRobot."
 ---
 
-Sanity check :P
+sanity check :P
 
 ![image tooltip here](/assets/images/anonymous-meme.png){: width="250" }
 

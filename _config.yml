@@ -19,19 +19,26 @@
 # in the templates via {{ site.myvariable }}.
 
 title: RamRobot
-email: andresortiz@protonmail.ch
+email: ramrobot@tuta.com
+author: Carlos Ortiz
+lang: es
+timezone: America/Mexico_City
 description: >- # this means to ignore newlines until "baseurl:"
-  RamRobot es un site donde encontrarás writeups, repositorios de código, código que he hecho a lo largo de mi carrera y posts de mis opiniones en general.
-  Espero lo disfrutes :))
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
+  I apologize in advance if I get anything wrong — misleading anyone who reads my content is the last thing I want. If you notice any errors, please contact me through my social media — I’d appreciate it.
 github_username:  ramrobot
+
+# Pages shown in the site header navigation
+header_pages:
+  - categories/general.md
+  - categories/writeup.md
+  - categories/code.md
+  - about.markdown
+  - intro.markdown
 
 # ramrobot.github.io
 domain: ramrobot.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://ramrobot.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /  
+baseurl: /
 
 # Build settings
 theme: minima
@@ -40,6 +47,9 @@ plugins:
 
 minima:
   skin: dark
+
+# Google Analytics (GA4)
+google_analytics: G-0WEQRJJ1TG
 
 # Exclude from processing.
 # The following items will not be processed, by default.

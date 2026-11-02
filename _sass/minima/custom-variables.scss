@@ -1,1 +1,36 @@
-// Placeholder to allow overriding predefined variables smoothly.
+// ==========================================================================
+// "Milk Inside" — Custom Variables
+// Color palette inspired by Nikita Kryukov's
+// "Milk inside a bag of milk inside a bag of milk"
+// Three colors: black, red-violet, purple
+// ==========================================================================
+
+// --- Font families ---------------------------------------------------------
+$base-font-family: "VT323", "Courier New", monospace;
+$code-font-family: "VT323", "Courier New", monospace;
+$pixel-font: "Press Start 2P", "Courier New", monospace;
+
+// --- Dark-mode palette (overrides Minima's $dm-* variables) ---------------
+$dm-brand-color: #5c0120;       // red-violet — environments, shapes
+$dm-brand-color-light: #7d128d; // purple — lightest shade, hover states
+$dm-brand-color-dark: #2a0010;  // deep red-violet — darkest accents
+
+$dm-site-title-color: #7d128d;   // purple
+
+$dm-text-color: #e8d8e8;        // soft pink-white — readable on pure black
+$dm-background-color: #000000;  // pure black — as requested
+$dm-code-background-color: #0d0006;
+
+$dm-link-base-color: #c9295e;    // bright red-violet
+$dm-link-visited-color: #c9295e;
+$dm-link-hover-color: #7d128d;   // purple on hover
+
+$dm-border-color-01: #2a0010;    // deep border
+$dm-border-color-02: #5c0120;    // medium border
+$dm-border-color-03: #5c0120;    // strong border
+
+$dm-table-text-color: #e8d8e8;
+$dm-table-zebra-color: #0a0006;
+$dm-table-header-bg-color: #1a0010;
+$dm-table-header-border: #2a0010;
+$dm-table-border-color: #2a0010;

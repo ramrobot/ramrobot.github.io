@@ -1,2 +1,209 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+// ==========================================================================
+// "Milk Inside" — Custom Styles
+// Pixelated, dark, minimalistic — inspired by
+// "Milk inside a bag of milk inside a bag of milk"
+// ==========================================================================
+
+// --- Pixel font sizing -----------------------------------------------------
+// Press Start 2P renders ~2x larger than typical fonts at the same px size,
+// so we scale headings down aggressively.
+
+@mixin pixel {
+  font-family: $pixel-font;
+  letter-spacing: 1px;
+}
+
+// --- Force pure black background on everything ----------------------------
+// Minima's dark skin sets #181818; we override every layer to #000000.
+html, body {
+  background-color: #000000 !important;
+}
+
+.site,
+.site-header,
+.site-nav,
+.wrapper,
+.site-footer,
+.post,
+.page,
+article {
+  background-color: #000000;
+}
+
+body {
+  font-size: 18px;            // VT323 needs slightly larger base for legibility
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include pixel;
+  line-height: 1.4;
+  font-weight: 400;          // Press Start 2P only has one weight
+}
+
+h1 { font-size: 20px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 12px; }
+
+// --- Site header ----------------------------------------------------------
+.site-header {
+  border-top: 5px dashed #c9295e;
+  border-bottom: 1px solid #7d128d;
+}
+
+.site-title {
+  @include pixel;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba($dm-brand-color-light, 0.4);
+
+  &, &:visited, &:hover {
+    color: $dm-site-title-color;
+  }
+}
+
+.site-nav {
+  border: 1px solid $dm-border-color-01;
+
+  .page-link {
+    @include pixel;
+    font-size: 9px;
+    color: $dm-link-base-color;
+    padding: 5px 10px;
+    transition: color 0.15s, border-color 0.15s;
+
+    &, &:visited { color: $dm-link-base-color; }
+    &:hover {
+      color: $dm-brand-color-light;
+    }
+  }
+}
+
+// --- Post list ------------------------------------------------------------
+.post-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.post-link {
+  @include pixel;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &, &:visited { color: $dm-link-base-color; }
+  &:hover { color: $dm-brand-color-light; }
+}
+
+.post-meta {
+  font-size: 16px;
+  color: #c9295e;               // bright red-violet — readable on pure black
+}
+
+// --- Post content ---------------------------------------------------------
+.post-title {
+  @include pixel;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.post-header {
+  border-bottom: 1px solid #7d128d;
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit * 0.5;
+}
+
+// --- Links -----------------------------------------------------------------
+a {
+  transition: color 0.15s;
+
+  &:visited { color: $dm-link-visited-color; }
+  &:hover { color: $dm-link-hover-color; }
+}
+
+// --- Code ------------------------------------------------------------------
+code {
+  font-family: $code-font-family;
+  background: $dm-code-background-color;
+  border: 1px solid $dm-border-color-01;
+  padding: 2px 6px;
+  font-size: 16px;
+  color: $dm-brand-color-light;
+}
+
+pre {
+  background: $dm-code-background-color;
+  border: 1px solid $dm-border-color-01;
+
+  > code {
+    border: none;
+    font-size: 16px;
+  }
+}
+
+// --- Blockquote ------------------------------------------------------------
+blockquote {
+  border-left: 3px dashed $dm-brand-color;
+  color: $dm-brand-color;
+  padding-left: $spacing-unit * 0.5;
+
+  > :last-child { margin-bottom: 0; }
+}
+
+// --- Horizontal rule -------------------------------------------------------
+hr {
+  border: none;
+  border-top: 1px dashed $dm-brand-color;
+}
+
+// --- Table -----------------------------------------------------------------
+table {
+  border: 1px solid $dm-border-color-01;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid $dm-border-color-01;
+    padding: $spacing-unit * 0.25;
+  }
+
+  th {
+    background-color: $dm-table-header-bg-color;
+  }
+
+  tr:nth-child(even) {
+    background-color: $dm-table-zebra-color;
+  }
+}
+
+// --- Footer ----------------------------------------------------------------
+.site-footer {
+  border-top: 1px solid $dm-border-color-01;
+  color: $dm-brand-color;
+
+  .footer-heading {
+    @include pixel;
+    font-size: 12px;
+  }
+
+  .feed-subscribe .rss {
+    border-color: $dm-border-color-02;
+  }
+
+  a {
+    color: $dm-brand-color-light;
+  }
+}
+
+// --- Responsive ------------------------------------------------------------
+@include media-query($on-palm) {
+  h1 { font-size: 16px; }
+  h2 { font-size: 13px; }
+  h3 { font-size: 12px; }
+  h4, h5, h6 { font-size: 10px; }
+
+  .site-title { font-size: 16px; }
+  .post-title { font-size: 13px; }
+  .post-link  { font-size: 11px; }
+  .site-nav .page-link { font-size: 8px; }
+  body { font-size: 16px; }
+}

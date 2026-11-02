@@ -4,13 +4,12 @@ title: Intro
 permalink: /intro/
 ---
 
-Aquí encontrarás writeups, repositorios de código, código que he hecho a lo largo de mi carrera y posts de mis opiniones en general.
-Me disculpo por adelantado si escribo algo incorrecto, ya que no es mi intención mal informar a la gente que lee mi contenido.
+Here you'll find writeups, code repositories I've built throughout my career, and general opinion posts. If I get anything wrong, I apologize in advance — I'd never want to mislead anyone reading this.
 
-En caso de notar algún error favor de contactarme por medio de mis redes sociales, te lo agradecería.
+If you spot any errors, feel free to reach out through my social media — I'd appreciate it.
 
-En otros temas, espero que estés bien y disfrutes de lo que escribo. Y trataré de no aburrir.
-
-Sin más que decir, hasta la próxima :D
+Anyway, I hope you're doing well and enjoy what I write. :D
 
 ![image tooltip here](/assets/images/hang-in-there-cat.jpg){: width="250" }
+
+🎮 [**Milk inside a bag of milk inside a bag of milk**](https://store.steampowered.com/app/1392820/Milk_inside_a_bag_of_milk_inside_a_bag_of_milk/) — *the game that inspired this site's aesthetic and my profile pic.*
