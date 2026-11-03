@@ -4,7 +4,7 @@ title: Social
 permalink: /social/
 ---
 
-HacktheBox: [DDR4RAM](https://profile.hackthebox.com/profile/019ed29b-d4e5-7284-b3a2-a7150bc1f72b?utm_medium=copy_url)
+HacktheBox: [randomaccessmemory](https://profile.hackthebox.com/profile/019ed29b-d4e5-7284-b3a2-a7150bc1f72b?utm_medium=copy_url)
 
 GitHub: [ramrobot][github]
 
